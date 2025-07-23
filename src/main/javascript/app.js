@@ -308,7 +308,7 @@ app.listen(port, () => {
   if (!config.channelAccessToken || !config.channelSecret) {
       console.warn("LINE Channel Access Token or Channel Secret is not set. The bot may not work correctly.");
   }
-   if (!N8N_WEBHOOK_URL) {
-      console.warn("N8N_WEBHOOK_URL is not set. Reporting to n8n will fail.");
+   if (!GAS_WEBHOOK_URL) {
+      console.warn("GAS_WEBHOOK_URL is not set. Reporting to Google Apps Script will fail.");
   }
 });
